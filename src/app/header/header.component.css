@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+} 
+h1 {
+    text-transform: uppercase;
+    color: aqua;
+}
+.navBar {
+    width: 30%;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
