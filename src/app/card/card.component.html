@@ -1,5 +1,10 @@
-<div class="card">
-    <img src="../../assets/Kizu+Table+Lamp+White+Marble,+Small.jpeg" alt="first">
-    <h2>Kizu</h2>
-
-</div>
+<ng-container *ngIf="gallery.length > 0">
+	<p>Total: {{value}}</p>
+	<ul class="gallery">
+		<li *ngFor="let card of gallery" class="card">
+			<p>{{card.name}}</p>
+			<img *ngIf="card.img" src="{{card.img}}" alt="{{card.name}}" (click)="this.sum(card.num)" />
+			<p *ngIf="card.name && card.name.length > 0">
+		</li>
+	</ul>
+</ng-container>
